@@ -1,7 +1,7 @@
 BitMarcy
 ==========
 
-This is stunning BitMark (BTM) IRC bot.
+This is stunning Bitmark (BTM) IRC bot.
 
 Usage
 =====

@@ -64,7 +64,7 @@ bot = Cinch::Bot.new do
 
   on :message, "!pools" do |m|
     refresh_pools
-    reply = "List of BitMark (BTM) mining pools:\n\n"
+    reply = "List of Bitmark (BTM) mining pools:\n\n"
     reply << @pools.shuffle.join("\n")
     m.user.msg reply
   end
