@@ -73,8 +73,10 @@ bot = Cinch::Bot.new do
     refresh_stats
     blocks = @stats["blocks"]
     diff = @stats["difficulty"]
+    target = (( @stats["difficulty"] * 4294967296 ) / 120 ) / 1000000000.0
     nethash = @stats["networkhashps"] / 1000000000.0
-    m.user.msg "Diff: #{diff.round(8)}, Network: #{'%.4f' % nethash} GH/s, Blocks: #{blocks}"
+    change = (720 * ((@stats["blocks"] / 720)+1)).floor - @stats["blocks"]
+    m.user.msg "Diff: #{diff.round(8)}, Target: #{'%.4f' % target} GH/s, Network: #{'%.4f' % nethash} GH/s, Blocks: #{blocks}, Change: #{change}"
   end
 
   on :message, "!price" do |m|
