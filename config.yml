@@ -1,0 +1,10 @@
+server: "irc.freenode.net"
+nick: "BitMarcy"
+channels:
+  - "#bitmark"
+
+daemon:
+  rpc_host: "127.0.0.1"
+  rpc_port: 9266
+  rpc_user: 1
+  rpc_password: SECURE_PASSWORD
