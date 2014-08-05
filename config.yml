@@ -1,5 +1,6 @@
 server: "irc.freenode.net"
 nick: "BitMarcy"
+password: "IRC_PASSWORD"
 channels:
   - "#bitmark"
 
