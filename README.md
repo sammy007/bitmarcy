@@ -14,6 +14,11 @@ Inside cloned directory run: `bundle install` to install dependencies
 
 Run bot: `ruby bot.rb`
 
+Buy shoes for Marcy
+-------------------
+
+**BTM:** bFt82YNo81G9431PkvNk75DpmJZVJowfcw
+
 License
 -------
 
