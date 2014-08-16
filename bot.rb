@@ -83,6 +83,8 @@ bot = Cinch::Bot.new do
   on :message, "!price" do |m|
     refresh_price
     m.user.msg "Last: #{'%.8f' % @price["Poloniex"]["price"]} BTC | Volume: #{@price["Poloniex"]["vol"]} BTC | Poloniex | https://poloniex.com/exchange/btc_btm"
+    cap = @stats["blocks"] * 20 * @price["Poloniex"]["price"]
+    m.user.msg "Market cap: #{'%.8f' % cap} BTC"
   end
 
   on :message, /^!worth (\d+)/ do |m, amount|
